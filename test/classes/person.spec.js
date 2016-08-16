@@ -17,7 +17,7 @@ describe('When testing the Person class', () => {
   });
 
   it('returns the correct age', () => {
-    person.name.should.equal('Wellington');
+    person.age.should.equal(150);
   });
 
   it('allows the name to be changed', () => {
