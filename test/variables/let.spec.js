@@ -1,6 +1,4 @@
-let chai  = require('chai');
-
-chai.should();
+let chai  = require('chai').should();
 
 describe('When testing variables declared as let', () => {
 

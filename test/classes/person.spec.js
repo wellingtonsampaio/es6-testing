@@ -1,8 +1,6 @@
-let chai  = require('chai'),
+let chai  = require('chai').should(),
     path  = require('path'),
     Person = require(path.join(__dirname, '../..', '/classes/person'));
-
-chai.should();
 
 describe('When testing the Person class', () => {
 

@@ -1,6 +1,4 @@
-let chai  = require('chai');
-
-chai.should();
+let chai  = require('chai').should();
 
 describe('When testing default function parameters', () => {
 
@@ -19,6 +17,11 @@ describe('When testing default function parameters', () => {
   it('is equal to the default value if a value is not informed for a default function param', () => {
     let result = testFunction();
     result.p2.should.equal('default');
+  });
+
+  it('is equal to the value passed if a value is informed for a default function param', () => {
+    let result = testFunction('Wellington', 'Sampaio');
+    result.p2.should.equal('Sampaio');
   });
 
 });
